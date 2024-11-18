@@ -1,0 +1,160 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: white;
+}
+p{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+hr{
+    margin: 0;
+    background: rgb(9, 99, 151);
+}
+button{
+    color: white;
+    background: rgb(9, 99, 151);
+}
+#header{
+    background: rgb(9, 99, 151);
+}
+.headerRow{
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 2% 0;
+    display: flex; 
+}
+.name{
+    color: white;
+    font-size: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu a{
+    padding-right: 25px;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    transform: scale(1.15);
+    transition: 0.25s;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    align-items: center;
+}
+.page{
+    margin: 0 2% 0;
+}
+.space{
+    padding: 30px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.to_count{
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.to_count div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+button{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+}
+#info{
+    margin: 0 10% ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+#company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    display: flex;
+}
+.list div{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.list p{
+    text-align: center;
+}
+#advantages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages_list{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.advantages_list div{
+    width: 20%;
+    padding: 0 0.5%;
+}
+.advantages_list p{
+    text-align: center;
+}
+#reviews{
+    display: flex;
+}
+#reviews div{
+    flex-grow: 1;
+}
+#contacts{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts_input input{
+    padding: 5px 25px 5px 0;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+footer{
+    background: rgb(9, 99, 151);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+footer div{
+    color: white;
+    text-align: center;
+}
