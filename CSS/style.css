@@ -55,6 +55,9 @@ button{
     line-height: 20px;
     align-items: center;
 }
+.contact a{
+    color: white;
+}
 .page{
     margin: 0 2% 0;
 }
@@ -131,6 +134,9 @@ button{
 .advantages_list p{
     text-align: center;
 }
+.advantages_list i{
+    color: rgb(6, 180, 108);
+}
 #reviews{
     display: flex;
 }
@@ -157,4 +163,8 @@ footer{
 footer div{
     color: white;
     text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
