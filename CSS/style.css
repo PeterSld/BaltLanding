@@ -15,14 +15,14 @@ p{
 }
 hr{
     margin: 0;
-    background: rgb(9, 99, 151);
+    background: rgb(6, 180, 108);
 }
 button{
     color: white;
-    background: rgb(9, 99, 151);
+    background: rgb(6, 180, 180);
 }
 #header{
-    background: rgb(9, 99, 151);
+    background: rgb(6, 180, 108);
 }
 .headerRow{
     color: white;
@@ -149,7 +149,7 @@ button{
     font-size: larger;
 }
 footer{
-    background: rgb(9, 99, 151);
+    background: rgb(12, 103, 163);
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
