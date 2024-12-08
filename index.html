@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="images/logo.jpg">
     <script src="JS/script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel = "stylesheet" href="CSS/style.css">
@@ -38,34 +39,56 @@
     </div>
   </header>
   <hr>
+  <form method="post" data-email="psaldaiev@gmail.com" class="gform" action="https://script.google.com/macros/s/AKfycbyPaRyvthNso86IY02LTOBkujVXM4Cj0X2kFfWjLPsQshvCPnSFx24KPoNIeSv3BWQi/exec" id="modal">
+    <div class="modal_body">
+      <h1>Получить консультацию</h1>
+      <div style="display: flex">
+        <div>
+          <input name="name" placeholder="Ваше имя" size="20" required>
+        </div>
+        <div>
+          <input name="phone" placeholder="Ваш телефон" type="number" size="20" required>
+        </div>
+      </div>
+      <button style="margin-top: 15px;">Получить консультацию</button>
+      <div style="display:none" class="thankyou_message">
+        <h2>Спасибо, что оставили свои данные! Мы скоро свяжемся с вами!
+        </h2>
+      </div>
+    </div>
+  </form>
   <div class="page">
     <div class="space"></div>
     <div id="main">
       <span data-aos="slide-up" style="font-size: 50px;margin-bottom: 45px;">ООО-БАЛТАЛЬЯНС</span>
-      <div data-aos="fade-up" class="to_count">
+      <form method="post" data-email="psaldaiev@gmail.com" action="https://script.google.com/macros/s/AKfycbyPaRyvthNso86IY02LTOBkujVXM4Cj0X2kFfWjLPsQshvCPnSFx24KPoNIeSv3BWQi/exec" data-aos="fade-up" class="to_count gform">
         <span style="font-weight: bold;">Рассчитать стоимость перевозки</span>
         <div>
           <span>Адрес загрузки</span>
-          <input type="text" size="55">
+          <input name="address_from" required size="55">
         </div>
         <div>
           <span>Адрес выгрузки</span>
-          <input type="text" size="55">
+          <input name="address_to" required size="55">
         </div>
         <div>
           <span>Имя</span>
-          <input type="text" size="55">
+          <input name="name" required size="55">
         </div>
         <div>
           <span>Телефон</span>
-          <input type="text" size="55">
+          <input name="phone" type="number" size="55" style="width: 415px;" required>
         </div>
         <div>
           <span>E-mail</span>
-          <input type="text" size="55">
+          <input name="mail" required size="55">
         </div>
         <button>Получить консультацию</button>
-      </div>
+        <div style="display:none" class="thankyou_message">
+          <h2>Спасибо, что оставили свои данные! Мы скоро свяжемся с вами!
+          </h2>
+        </div>
+      </form>
       <div class="space"></div>
       <span data-aos="fade-up" style="font-size: 30px">ПРОФЕССИОНАЛЬНЫЕ ГРУЗОПЕРЕВОЗКИ ПО ВСЕЙ РОССИИ</span>
     </div>
@@ -81,9 +104,9 @@
         <div style="width:45%; margin-right: 5%;display: flex;flex-direction: column; align-items: center;">
           
           <p data-aos="fade-up">Доверьте Ваш груз профессионалам!</p>
-          <button data-aos="fade-up">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+          <button id="button_modal" data-aos="fade-up">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
         </div>
-        <div data-aos="fade-left" style="text-align:center;flex-grow:1;height: 300px;border: 2px solid black;">картинка</div>
+        <div data-aos="fade-left" style="text-align:center;flex-grow:1;width: 55%;"><img src="images/1.jpg" style="object-fit: contain; width: 100%;"></div>
       </div>
     </div>
     <div class="space"></div>
@@ -120,18 +143,22 @@
       </div>
     </div>
     <div class="space"></div>
-    <div id="contacts">
+    <form method="post" data-email="psaldaiev@gmail.com" class="gform" action="https://script.google.com/macros/s/AKfycbyPaRyvthNso86IY02LTOBkujVXM4Cj0X2kFfWjLPsQshvCPnSFx24KPoNIeSv3BWQi/exec"  id="contacts">
       <h1 data-aos="fade-up">КОНТАКТЫ</h1>
       <div class="space"></div>
       <H1 style="text-decoration: underline;font-weight: bold;"><a href="tel:79111040112">+7(911)104-01-12</a></H1>
       <div class="space"></div>
       <h2 style="font-weight: bold;">Получить консультацию</h2>
       <div class="contacts_input">
-        <input type="text" placeholder="Ваше Имя">
-        <input type="text" placeholder="Ваш Телефон">
+        <input name="name" required placeholder="Ваше Имя">
+        <input name="phone" type="number" placeholder="Ваш Телефон" required>
       </div>
       <button>Получить консультацию</button>
-    </div>
+      <div style="display:none" class="thankyou_message">
+        <h2>Спасибо, что оставили свои данные! Мы скоро свяжемся с вами!
+        </h2>
+      </div>
+    </form>
     <div class="space"></div>
     <div class="space"></div>
     <div class="space"></div>
@@ -146,11 +173,12 @@
       ООО-БАЛТАЛЬЯНС
     </div>
     <div>
-      <a href="tel:79111040112">+7(911)104-01-12</a><br>
+      <a style="color: white;" href="tel:79111040112">+7(911)104-01-12</a><br>
       Режим работы: ПН-ПТ 9:00-18:00
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/adaea234c6.js" crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="JS/form-submsission-handler.js"></script>
 </body>
 </html>
